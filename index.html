@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Lana!</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jua|Quicksand">
+
+</head>
+
+<body>
+    <button onclick="toggleMusic()" id="music-btn">Making The Bed</button>
+    <audio id="bg-music" src="music.mp3" loop></audio>
+  
+  <img src="bluestar.png" class="balloon" style="left:10%; animation-delay:0s;">
+  <img src="pinkstar.png" class="balloon" style="left:40%; animation-delay:1s;">
+  <img src="purplestar.png" class="balloon" style="left:70%; animation-delay:2s;">
+
+  
+  <div class="confetti" style="left:5%; animation-delay:0s;"></div>
+  <div class="confetti" style="left:25%; animation-delay:1s;"></div>
+  <div class="confetti" style="left:45%; animation-delay:2s;"></div>
+  <div class="confetti" style="left:65%; animation-delay:3s;"></div>
+  <div class="confetti" style="left:85%; animation-delay:1.5s;"></div>
+  <header class="center">
+    <h1>🎉 Happy 17th Birthday Lanaaa! 🎉</h1>
+    <p>May your 17th birthday be full of amazing surprises!</p>
+  </header>
+
+  <nav>
+    <a href="#hero">Home</a>
+    <a href="#gallery">Whats this?</a>
+    <a href="#message">Message</a>
+  </nav>
+
+  
+  <section class="hero" id="hero">
+    <h1>It's Your Special Day! 🎂</h1>
+    <p>Wishing you the best on your 17th birthday !</p>
+    <img src="banner.png" alt="Birthday Banner" class="center-banner">
+
+  </section>
+
+  
+  <section class="decorations" style="text-align:center; padding: 20px; font-size: 2rem;">
+    🎈 🎉 🎈 🎉 🎈<br>
+    <span style="font-size:1rem; color:#ff5fa2;"></span>
+  </section>
+
+  
+  <section class="gallery" id="gallery" style="text-align:center; padding:60px;">
+  <h1 style="color:#ff5fa2; font-size:2.5rem;">🎉 Under Construction 🎉</h1>
+  <p style="font-size:1.2rem; max-width:500px; margin:auto;">
+    What's this? seems to be something special huh?<br>
+    Check back soon! 💖
+  </p>
+  <div class="pastel-frame pulse">
+  <img src="comingsoon.png" alt="Coming Soon" class="center" style="width: 100%; border-radius: 15px;">
+</div>
+
+</section>
+
+  
+  <section class="hero" id="message">
+    <h1>💌</h1>
+    <div class="container">
+    <p class="text-content">Dear lana, <br>
+HELLOOO!!! HAPPY 17th BIRTHDAY MY GORGEOUS AWESOME HOT AMAZING CUTE ADORABLE GIRLFRIEND!!! Can't believe you're already 17, you just turned 16 like a year ago whew... <br>
+Aaaanywayss, I'm so proud of you for staying this long, you're so strong in keeping up with life and handling meee which is very awesomesauce. Remember that I LOOOVE you soooo so much and that you are the best girlfriend I could ever ask for. Happy birthday to Pipbear tooo (our child btw) like wow i cant believe it's been a year since pipbear is with us, hopefully Hugo is next to come irl but idk when because ITS SO HARD TO FIND A PLUSH THAT LOOKS LIKE HUGOOO AAAA. <br>
+On a final note, thank you for everything yaaa cintakuuu, I'm sorry if i've done you wrong in the past year. I love you so much and I hope today will be such a fun day for both of us, hehe. ♥♥ <br> 
+<br>
+From your beloved boyfriend, <br>
+Habibii
+</p>
+</div>
+  </section>
+
+  
+  <section class="hero" style="padding: 40px;">
+    <h2>✨ Memories From Last Year ✨</h2>
+    <img src="special.jpg" alt="Special Memory" style="max-width:60%; border-radius:15px; margin-top:20px;" />
+  </section>
+
+  <footer>
+    © 29/11/25 - From your amazing-est boyfriend 🎀
+  </footer>
+
+  <script>
+  function toggleMusic() {
+  const music = document.getElementById("bg-music");
+  const btn = document.getElementById("music-btn");
+
+  if (music.paused) {
+    music.play();
+    btn.textContent = "Pause ⏸";
+  } else {
+    music.pause();
+    btn.textContent = "Play  ▶ ";
+  }
+}
+</script>
+</body>
+</html>
