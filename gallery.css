@@ -164,6 +164,24 @@ details.section {
 details.section[open] {
     
 }
+
+details[open] .fade {
+opacity: 1 !important;
+transform: none !important;
+transition: none !important;
+}
+
+
+details[open] .enter {
+animation: none !important;
+opacity: 1 !important;
+transform: none !important;
+}
+
+
+details[open] .gallery-item {
+box-shadow: none !important;
+}
 @keyframes fadeExpand {
     0% { opacity: 0; transform: translateY(-6px); }
     100% { opacity: 1; transform: translateY(0); }
@@ -269,6 +287,7 @@ details.section {
   margin: 25px 0;
   box-shadow: 0 5px 15px rgba(0,0,0,0.08);
 }
+
 
 
 
