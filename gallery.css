@@ -192,15 +192,15 @@ details.section[open] {
 }
 
 .enter {
-opacity: 0;
-transform: scale(0.85) translateY(20px);
-animation: popIn 0.7s ease forwards;
+  opacity: 0;
+  animation: simpleFade 0.6s ease forwards;
 }
-@keyframes popIn {
-0% { opacity: 0; transform: scale(0.85) translateY(20px); }
-60% { opacity: 1; transform: scale(1.03) translateY(0); }
-100% { opacity: 1; transform: scale(1); }
+
+@keyframes simpleFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
+
 
 .section-bar {
 width: 100%;
@@ -270,6 +270,7 @@ details.section {
   margin: 25px 0;
   box-shadow: 0 5px 15px rgba(0,0,0,0.08);
 }
+
 
 
 
