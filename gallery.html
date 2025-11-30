@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery</title>
+  <link rel="stylesheet" href="gallery.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <h1 class="title fade">The gallery ✨</h1>
+
+  
+  <details class="section fade" id="bday">
+    <summary class="section-bar">From my friends! 😜</summary>
+    <div class="gallery-container">
+      <div class="gallery-item fade"><span class="img-header">From Azur</span><img src="azur.png" alt="From Azura" data-header=""></div>
+      <div class="gallery-item fade"><span class="img-header">From Ita</span><img src="Ita.png" alt="From Ita" data-header=""></div>
+    </div>
+  </details>
+
+  
+  <details class="section fade" id="bday">
+    <summary class="section-bar">Colorhunting date! 💕</summary>
+    <div class="gallery-container">
+      <div class="gallery-item fade"><span class="img-header"></span><img src="lana.jpeg" alt="red" data-header=""></div>
+      <div class="gallery-item fade"><span class="img-header"></span><img src="lana2.jpeg" alt="red" data-header=""></div>
+      <div class="gallery-item fade"><span class="img-header"></span><img src="lana3.jpg" alt="red" data-header=""></div>
+      <div class="gallery-item fade"><span class="img-header"></span><img src="me1.jpg" alt="blue" data-header=""></div>
+      <div class="gallery-item fade"><span class="img-header"></span><img src="me2.jpg" alt="blue" data-header=""></div>
+      <div class="gallery-item fade"><span class="img-header"></span><img src="me4.jpg" alt="blue" data-header=""></div>
+      <div class="gallery-item fade"><span class="img-header"></span><img src="red.jpg" alt="blue" data-header=""></div>
+      <div class="gallery-item fade"><span class="img-header"></span><img src="blu.jpg" alt="blue" data-header=""></div>
+    </div>
+  </details>
+
+  
+  <details class="section fade" id="bday">
+    <summary class="section-bar">Birthdaaaaayyyyy [documentation] 🎂</summary>
+    <div class="gallery-container">
+      <div class="gallery-item fade"><span class="img-header"></span><img src="us1.jpg" alt="us" data-header=""></div>
+      <div class="gallery-item fade"><span class="img-header"></span><img src="us2.jpg" alt="us" data-header=""></div>
+      <div class="gallery-item fade"><span class="img-header"></span><img src="us3.jpg" alt="us" data-header=""></div>
+      <div class="gallery-item fade"><span class="img-header"></span><img src="us4.jpg" alt="us" data-header=""></div>
+      <div class="gallery-item fade"><span class="img-header"></span><img src="us5.jpg" alt="us" data-header=""></div>
+      <div class="gallery-item fade"><span class="img-header"></span><img src="us6.jpg" alt="us" data-header=""></div>
+      <div class="gallery-item fade"><span class="img-header"></span><img src="us7.jpg" alt="us" data-header=""></div>
+      <div class="gallery-item fade"><span class="img-header"></span><img src="us8.jpg" alt="us" data-header=""></div>
+      <div class="gallery-item fade"><span class="img-header"></span><img src="pb.jpg" alt="us" data-header=""></div>
+      <div class="gallery-item fade"><span class="img-header"></span><img src="pb1.jpg" alt="us" data-header=""></div>
+      <div class="gallery-item fade"><span class="img-header"></span><img src="pb2.jpg" alt="us" data-header=""></div>
+      <div class="gallery-item fade"><span class="img-header"></span><img src="pb3.jpg" alt="us" data-header=""></div>
+      <div class="gallery-item fade"><span class="img-header"></span><img src="pbres.jpg" alt="us" data-header=""></div>
+    </div>
+  </details>
+
+  <section class="messages-section fade">
+<h2 class="messages-title">Final Note 😊</h2>
+<p class="messages-text">HEHE, Can't believe we still got to hang out so much on this special day of yours!!! <br>
+Today was such a fun day and I hope you had as much fun as I did because I spent so much time on planning, to make the experience worth it... <br>
+I'm sorry thooo if it's not what you wanted or what you expected, I knowww maybe there were better options but I hope you still liked it as much 💕<br>
+You've finally reached the end of the website too!! this is one of the few surprises I'm giving to you so u better look out for the next ones!! <br>
+I love you so much lana and I would give you the world and everything for you, I hope you liked this website too because I took SO SO MUCH TIMEE onto making it <br>
+and also lowkey trying to fix errors was such a pain eueuheheghuehuehgehgehghgeuguehgehu <br>
+IH SO SAD WE DIDNT GET THAT MUCHHH FOR COLORHUNTINGGG NOOOOOOOO :sob: <br>
+But AAAANYWAYSSS thats all from me in this page, maybe check again another time for more surprises and easter eggs, hehe. <br>
+P.S (open the sections pls if u haven't thx) <br>
+<br>
+Love, <br>
+Habibii 💋</p>
+</section>
+
+
+<div class="to-main-container fade">
+<a href="index.html" class="to-main-btn">⬅ Back to Main Page 🌹</a>
+</div>
+
+  
+  <div id="lightbox" class="lightbox hidden">
+    <span class="closeBtn">×</span>
+    <span class="nav-arrow left-arrow">❮</span>
+    <span class="nav-arrow right-arrow">❯</span>
+
+    <h2 id="lightbox-header" style="color:white; font-family:'Quicksand',sans-serif; text-align:center; margin-bottom:15px;"></h2>
+    <img id="lightbox-img" src="" alt="Expanded Image">
+  </div>
+
+<div class="music-btn" onclick="toggleMusic()">🎵</div>
+<audio id="bgm" src="gallerybgm.mp3" loop></audio>
+
+<script>
+  const galleryItems = document.querySelectorAll('.gallery-item img');
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const lightboxHeader = document.getElementById('lightbox-header');
+  const closeBtn = document.querySelector('.closeBtn');
+
+  galleryItems.forEach(img => {
+    img.addEventListener('click', () => {
+      lightboxImg.src = img.src;
+      lightboxHeader.textContent = img.dataset.header;
+      lightbox.classList.remove('hidden');
+    });
+  });
+
+  closeBtn.addEventListener('click', () => {
+    lightbox.classList.add('hidden');
+  });
+
+ 
+  const faders = document.querySelectorAll('.fade');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  }, { threshold: 0.2 });
+
+  faders.forEach(f => observer.observe(f));
+
+  let currentIndex = 0;
+const images = Array.from(galleryItems).map(img => img.src);
+const headers = Array.from(galleryItems).map(img => img.dataset.header);
+
+function showImage(index) {
+  if (index < 0) index = images.length - 1;          
+  if (index >= images.length) index = 0;             
+  currentIndex = index;
+  lightboxImg.src = images[currentIndex];
+  lightboxHeader.textContent = headers[currentIndex];
+
+  
+}
+
+galleryItems.forEach((img, index) => {
+  img.addEventListener('click', () => {
+    currentIndex = index;
+    showImage(currentIndex);
+    lightbox.classList.remove('hidden');
+  });
+});
+
+// Arrow buttons
+document.querySelector('.left-arrow').addEventListener('click', () => {
+  showImage(currentIndex - 1);
+});
+
+document.querySelector('.right-arrow').addEventListener('click', () => {
+  showImage(currentIndex + 1);
+});
+
+for (let i = 0; i < 25; i++) {
+  let s = document.createElement("div");
+  s.classList.add("sparkle");
+  s.style.left = Math.random() * 100 + "vw";
+  s.style.top = Math.random() * 100 + "vh";
+  s.style.animationDelay = Math.random() * 5 + "s";
+  document.body.appendChild(s);
+}
+
+const bgm = document.getElementById("bgm");
+let playing = false;
+
+function toggleMusic() {
+  if (!playing) {
+    bgm.play();
+    playing = true;
+  } else {
+    bgm.pause();
+    playing = false;
+  }
+}
+
+
+</script>
+</body>
+</html>
