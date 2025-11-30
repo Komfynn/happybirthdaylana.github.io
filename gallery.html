@@ -109,15 +109,6 @@ Habibii 💋</p>
 
  
  const faders = document.querySelectorAll('.fade');
-
-faders.forEach(f => {
-  if (f.closest("details")) {
-    f.classList.add("show");
-  } else {
-    observer.observe(f);      
-  }
-});
-
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -185,6 +176,7 @@ function toggleMusic() {
 </script>
 </body>
 </html>
+
 
 
 
