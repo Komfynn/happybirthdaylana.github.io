@@ -163,7 +163,7 @@ details.section {
     transition: all 0.45s ease;
 }
 details.section[open] {
-    animation: fadeExpand 0.45s ease;
+    
 }
 @keyframes fadeExpand {
     0% { opacity: 0; transform: translateY(-6px); }
@@ -270,6 +270,7 @@ details.section {
   margin: 25px 0;
   box-shadow: 0 5px 15px rgba(0,0,0,0.08);
 }
+
 
 
 
